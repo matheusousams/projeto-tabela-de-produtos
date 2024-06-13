@@ -119,9 +119,9 @@ export default function App() {
 
 
   return (
-    <div className='div'>
-      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <h1 className='titulo'>Estoque de Celulares</h1>
+    <div>
+      <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <h1>Estoque de Celulares</h1>
       </nav>
       <Formulario botao={btnCadastrar} eventoTeclado={aoDigitar} cadastrarProduto={cadastrarProduto} obj={objProduto} cancelar={limparFormulario} remover={deletarProduto} atualizar={atualizarProduto}/>
       <Tabela vetor={produtos} selecionar={selecionaProduto}/>

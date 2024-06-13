@@ -12,11 +12,11 @@ form input[type='button']{
   margin-right: 10px;
 }
 
-.titulo {
+h1{
   text-align: center;
   color: aliceblue;
 }
 
-.div{
+div{
   background-color: darkgrey;
 }
