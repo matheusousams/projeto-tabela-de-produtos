@@ -15,6 +15,7 @@ public class ProdutoModel {
     private Long idProduto;
     private String nomeProduto;
     private String marcaProduto;
+    private Long qtdProduto;
 
     public Long getIdProduto() {
         return this.idProduto;
@@ -38,6 +39,14 @@ public class ProdutoModel {
 
     public void setMarcaProduto(String marcaProduto) {
         this.marcaProduto = marcaProduto;
+    }
+
+    public Long getQtdProduto() {
+        return this.qtdProduto;
+    }
+
+    public void setQtdProduto(Long qtdProduto) {
+        this.qtdProduto = qtdProduto;
     }
 
 }

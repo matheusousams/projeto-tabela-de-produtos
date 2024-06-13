@@ -6,6 +6,7 @@ export default function Tabela({vetor, selecionar}) {
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Marca</th>
+                    <th>Quantidade</th>
                     <th>Selecionar</th>
                 </tr>
             </thead>
@@ -17,6 +18,7 @@ export default function Tabela({vetor, selecionar}) {
                             <td>{indice+1}</td>
                             <td>{obj.nomeProduto}</td>
                             <td>{obj.marcaProduto}</td>
+                            <td>{obj.qtdProduto}</td>
                             <td><button onClick={() => {selecionar(indice)}} className="btn btn-success">Selecionar</button></td>
                         </tr>
                     ))

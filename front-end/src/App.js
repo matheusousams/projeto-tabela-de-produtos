@@ -8,7 +8,8 @@ export default function App() {
   const produto = {
     idProduto: 0,
     nomeProduto: '',
-    marcaProduto: ''
+    marcaProduto: '',
+    qtdProduto: ''
   }
   
   const [btnCadastrar, setBtnCadastrar] = useState(true);
@@ -119,7 +120,10 @@ export default function App() {
 
 
   return (
-    <div>
+    <div className='div'>
+      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <h1 className='titulo'>Estoque de Celulares</h1>
+      </nav>
       <Formulario botao={btnCadastrar} eventoTeclado={aoDigitar} cadastrarProduto={cadastrarProduto} obj={objProduto} cancelar={limparFormulario} remover={deletarProduto} atualizar={atualizarProduto}/>
       <Tabela vetor={produtos} selecionar={selecionaProduto}/>
     </div>

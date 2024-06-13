@@ -3,6 +3,7 @@ export default function Formulario({botao, eventoTeclado, cadastrarProduto, obj,
         <form>
             <input type='text' value={obj.nomeProduto} onChange={eventoTeclado} name="nomeProduto" placeholder="Nome do Produto" className="form-control"/>
             <input type='text' value={obj.marcaProduto} onChange={eventoTeclado} name="marcaProduto" placeholder="Marca do Produto" className="form-control"/>
+            <input type='text' value={obj.qtdProduto} onChange={eventoTeclado} name="qtdProduto" placeholder="Quantidade de Produtos" className="form-control"/>
 
             {
                 botao

@@ -25,10 +25,13 @@ public class ProdutoService {
     public ResponseEntity<?> cadastrarAtualizarProdutos(ProdutoModel produtoModel, String action) {
 
         if (produtoModel.getNomeProduto().equals("")) {
-            respostaModel.setMensagem("Nome do produto é obrigatório");
+            respostaModel.setMensagem("Nome do produto é obrigatório!");
             return new ResponseEntity<RespostaModel>(respostaModel, HttpStatus.BAD_REQUEST);
         } else if (produtoModel.getMarcaProduto().equals("")) {
-            respostaModel.setMensagem("Nome da marca é obrigatório");
+            respostaModel.setMensagem("Nome da marca é obrigatório!");
+            return new ResponseEntity<RespostaModel>(respostaModel, HttpStatus.BAD_REQUEST);
+        } else if (produtoModel.getQtdProduto().equals("")) {
+            respostaModel.setMensagem("Quantidade de Produtos é obrigatória!");
             return new ResponseEntity<RespostaModel>(respostaModel, HttpStatus.BAD_REQUEST);
         } else {
             if (action.equals("cadastrarProdutos")) {
