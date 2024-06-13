@@ -73,13 +73,12 @@ export default function App() {
 
       let vetorTemporario = [...produtos];
 
-      let indice = vetorTemporario.findIndex(() => {
-        return produto.idProduto === objProduto.idProduto;
-      });
+      let indice = vetorTemporario.findIndex(p => p.idProduto === objProduto.idProduto);
 
-      vetorTemporario.splice(indice, 1);
-
-      setProdutos(vetorTemporario);
+      if(indice > -1) {
+        vetorTemporario.splice(indice, 1);
+        setProdutos(vetorTemporario);
+      }
 
       limparFormulario();
 
